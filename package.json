@@ -1,0 +1,27 @@
+{
+  "name": "movierentalapi",
+  "version": "1.0.0",
+  "description": "A Movie Rental REST API built using NodeJS, Express and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinothvino42/MovieRentalApi.git"
+  },
+  "keywords": [
+    "Movie",
+    "API"
+  ],
+  "author": "Vinoth Vino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinothvino42/MovieRentalApi/issues"
+  },
+  "homepage": "https://github.com/vinothvino42/MovieRentalApi#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "joi": "^14.3.1"
+  }
+}
