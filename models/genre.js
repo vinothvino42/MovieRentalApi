@@ -1,4 +1,4 @@
-const Joi = require('joi');
+const Joi = require('@hapi/joi');
 const mongoose = require('mongoose');
 
 const Genre = mongoose.model('Genre', new mongoose.Schema({
@@ -11,10 +11,10 @@ const Genre = mongoose.model('Genre', new mongoose.Schema({
 }));
 
 function validateGenre(genre) {
-    const schema = {
-        name: Joi.string().min(3).required()
-    };
-    return Joi.validate(genre, schema);
+    const schema = Joi.object({
+        name: Joi.string().min(5).max(50).required(),
+    });
+    return schema.validate(genre);
 }
 
 exports.Genre = Genre;
