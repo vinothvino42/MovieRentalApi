@@ -22,7 +22,7 @@
   "homepage": "https://github.com/vinothvino42/MovieRentalApi#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.9.7"
   }
 }
